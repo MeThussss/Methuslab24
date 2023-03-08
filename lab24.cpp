@@ -29,7 +29,7 @@ ComplexNumber ComplexNumber::operator-(const ComplexNumber &c){
 }
 
 ComplexNumber ComplexNumber::operator*(const ComplexNumber &c){
-	return ComplexNumber((real*c.real) - (imag*c.imag),(real*c.imag) - (imag*c.real));
+	return ComplexNumber((real*c.real) - (imag*c.imag),(real*c.imag) + (imag*c.real));
 }
 
 ComplexNumber ComplexNumber::operator/(const ComplexNumber &c){
